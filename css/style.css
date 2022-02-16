@@ -528,7 +528,7 @@ ul{
 }
 @media(max-width: 700px){
     .header__content{
-        margin-top: 220px;
+        margin-top: 130px;
     }
     .logo__img{
         width: 200px;
