@@ -140,8 +140,8 @@ ul{
     height: 723px;
     padding: 62px 32px;
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
 }
 .content-img{
     width: 483px;
@@ -158,10 +158,11 @@ ul{
     font-size: 26px;
     line-height: 32px;
     color: #000000;
+    text-align: justify;
 }
 .content__box{
     padding: 57px 0 87px 0;
-    background-color: #A0F2A3;
+    background-color: #fdf0d6;
 }
 .content__box-title{
     font-family: 'Roboto Slab', serif;
@@ -179,19 +180,17 @@ ul{
 .content__box-item{
     width: 260px;
     height: 319px;
-    border: 0.5px solid #000000;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 35px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: #D6F9D7;
+    background-color: #ffffff;
+    padding: 10px;
 }
 .content__box-img{
-    margin-bottom: 50px;
-    margin-left: 64px;
-    margin-right: 64px;
-    margin-top: 15px;
+    display: block;
+    margin: 15px auto 50px auto;
 }
 .content__box-text{
     text-align: center;
@@ -237,6 +236,7 @@ ul{
     line-height: 24px;
     color: #000000;
     margin-bottom: 30px;
+    text-align: justify;
 }
 .content__item-second {
     display: flex;
@@ -244,12 +244,13 @@ ul{
     margin-top: 50px;
 }
 .content__item-second-text {
-    max-width: 460px;
+    max-width: 442px;
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     line-height: 24px;
     color: #000000;
     font-size: 19px;
+    text-align: justify;
 }
 .content__item-third {
     display: flex;
@@ -264,6 +265,7 @@ ul{
     color: #000000;
     font-size: 19px;
     margin-bottom: 30px;
+    text-align: justify;
 }
 .reviews {
     padding: 70px;
@@ -459,6 +461,23 @@ ul{
     .content-img{
         width: 450px;
     }
+     .content__box-items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+    } 
+    .content__box-item{
+        width: 230px;
+        height: 300px;
+    }
+    .content__box-img{
+        width: 130px;
+    }
+    .content__box-text{
+        font-size: 16px;
+        line-height: 27px;
+    }
 }
 @media(max-width: 1065px ){
     .menu__list{
@@ -511,6 +530,21 @@ ul{
     .content-img{
         width: 380px;
     }
+    .contacts__box .container{
+        padding: 0 100px;
+    }
+    .content__box-item{
+        margin: 20px;
+    }
+    .content__item-first-content{
+        margin-right: 20px;
+    }
+    .content__item-second-img{
+        margin-right: 20px;
+    }
+    .content__item-third-content{
+        margin-right: 20px;
+    }
 }
 @media(max-width: 900px){
     .info__block{
@@ -527,6 +561,51 @@ ul{
     }
     .content-img{
         width: 365px;
+    }
+    .content__title{
+        font-size: 34px;
+    }
+    .content__items{
+        margin: 0 10px;
+    }
+    .content__item-first{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content__item-first-content{
+        margin: 0;
+    }
+    .content__first-img{
+        width: 536px;
+    }
+    .content__item-first-text{
+        margin-bottom: 20px;
+    }
+    .content__item-second{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+    .content__item-second-img{
+        margin: 20px 0;
+        width: 536px;
+    }
+    .content__item-second-text{
+        max-width: 536px;
+    }
+    .content__item-third{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .content__item-third-content{
+        margin: 0;
+    }
+    .content__item-third-text{
+        margin-bottom: 20px;
+    }
+    .content__item-third-img{
+        width: 536px;
     }
 }
 @media(max-width: 845px){
@@ -615,6 +694,34 @@ ul{
         margin-top: 60px;
     }
 }
+@media(max-width: 600px){
+    .content__first-img{
+        width: 100%;
+    }
+    .content__item-second-img{
+        width: 100%;
+    }
+    .content__item-third-img{
+        width: 100%;
+    }
+}
+@media(max-width: 580px){
+    .content__box-title{
+        font-size: 31px;
+    }
+    .content__box-item {
+        width: 200px;
+        height: 260px;
+        padding: 5px;
+        margin: 10px;
+    }
+    .content__box-img {
+        width: 115px;
+    }
+    .content__box-text{
+        font-size: 15px;
+    }
+}
 @media(max-width: 540px){
     .info__block{
         width: 360px;
@@ -633,6 +740,23 @@ ul{
         width: 365px;
     }
 }
+@media(max-width: 480px){
+    .content__box-title{
+        font-size: 27px;
+    }
+    .content__box-item{
+        width: 180px;
+        height: 230px;
+        margin: 5px;
+    }
+    .content__box-img {
+        width: 100px;
+    }
+    .content__box-text {
+        font-size: 13px;
+        line-height: 20px;
+}
+}
 @media(max-width: 460px){
     .logo__img{
         width: 160px;
@@ -642,6 +766,15 @@ ul{
     }
     .info__inner{
         margin-left: 10px;
+    }
+    .content__item-first-text{
+        font-size: 16px;
+    }
+    .content__item-second-text{
+        font-size: 16px;
+    }
+    .content__item-third-text{
+        font-size: 16px;
     }
 }
 @media(max-width: 420px){
@@ -663,8 +796,25 @@ ul{
     .content-img{
         width: 310px;
     }
+    .content__box-title{
+        font-size: 24px;
+    }
+    .content__box-item{
+        width: 160px;
+        height: 210px;
+    }
+    .content__box-img {
+        width: 90px;
+        margin-bottom: 40px;
+    }
+    .content__box-text{
+        font-size: 12px;
+    }
 }
 @media(max-width: 420px){
+    .header__btn{
+        font-size: 20px;
+    }
     .info__block{
         width: 290px;
         height: 475px;
@@ -677,4 +827,29 @@ ul{
         width: 300px;
     }
 }
+@media(max-width: 380px){
+    .content__box{
+        display: none;
+    }
+}
+@media(max-width: 360px){
+    .content__box-item {
+        width: 135px;
+        height: 198px;
+        margin: 3px;
+    }
+    .content__box-img {
+        width: 85px;
+        margin-bottom: 22px;
+    }
+    .content__box-text {
+        font-size: 11px;
+    }
+}
+@media(max-width: 320px){
+    .content__title{
+        font-size: 30px;
+    }
+}
+
 
