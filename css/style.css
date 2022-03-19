@@ -722,7 +722,7 @@ ul{
 @media(max-width: 540px){
     .info__block{
         width: 360px;
-        height: 530px;
+        height: auto;
         padding: 40px 28px;
     }
     .info-title{
@@ -766,7 +766,7 @@ ul{
     .info__block{
         padding: 25px 22px;
         width: 325px;
-        height: 450px;
+        height: auto;
     }
     .info-title{
         margin-bottom: -15px;
@@ -795,10 +795,6 @@ ul{
 @media(max-width: 420px){
     .header__btn{
         font-size: 20px;
-    }
-    .info__block{
-        width: 290px;
-        height: 475px;
     }
     .info-title{
         font-size: 23px;
