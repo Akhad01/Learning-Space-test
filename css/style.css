@@ -380,6 +380,7 @@ ul{
 }
 .form-inner textarea {
     resize: none;
+    line-height: 36px;
 }
 .form-inner h3 {
     margin-top: 0;
@@ -683,14 +684,11 @@ ul{
 }
 @media(max-width: 630px){
     .header__title{
-        font-size: 62px;
+        font-size: 55px;
         text-align: center;
     }
     .header__button{
         text-align: center;
-    }
-    .header__button{
-        margin-top: 60px;
     }
 }
 @media(max-width: 600px){
