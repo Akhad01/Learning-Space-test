@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <script src="js/scroll.js" defer></script>
+    <script src="js/menu.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -23,17 +25,14 @@
                         </button>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Главная</a>
-                            </li>
-                            <li class="menu__item">
                                 <a href="#main__info" class="menu__link">О нас</a>
                             
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">PBL</a>
+                                <a href="#content" class="menu__link">PBL</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Контакты</a>
+                                <a href="#footer" class="menu__link">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -46,14 +45,14 @@
                     <h2 class="header__text">Учебное пространство нового поколения</h2>
                     <h3 class="header__text-1">Обучение по международной методике Трехъязычное обучение</h3>
                     <div class="header__button">
-                        <a class="header__btn">Оствить заявку</a>
+                        <a href="#footer-form" type="button" class="header__btn">Оствить заявку</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="main__info">
+        <section class="main__info" id="main__info">
             <div class="container">
                 <div class="info__inner">
                     <div class="info__block">
@@ -90,7 +89,7 @@
                 </div>
             </div>
         </div>
-         <div class="content"> 
+         <div class="content" id="content"> 
             <div class="container">
                 <h3 class="content__title">В Learning Space учатся по PBL</h3>
                 <div class="content__items">
@@ -127,7 +126,7 @@
                 </div>
             </div>
         </section> -->
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__inner">
                     <h3 class="footer__title">Cвяжитеcь с нами</h3>
@@ -164,7 +163,7 @@
                                 </sapn>
                             </li>
                         </ul>
-                        <form action="" class="footer-form">
+                        <form action="" class="footer-form" id="footer-form">
                             <div class="form-inner">
                                 <h3>Написать нам</h3>
                                 <input type="text" placeholder="Username">
