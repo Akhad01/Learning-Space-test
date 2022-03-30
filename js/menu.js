@@ -17,3 +17,10 @@ document.addEventListener('click', (event) => {
         menu.classList.remove('menu__list--active');
     }
 });
+
+
+document.addEventListener('click', (event) => {
+    if (!(event.target.closest('.menu__btn') || event.target.closest('.menu__list'))) {
+        menu.classList.remove('menu__list--active');
+    }
+});
