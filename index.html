@@ -46,7 +46,7 @@
                     <h2 class="header__text">Учебное пространство нового поколения</h2>
                     <h3 class="header__text-1">Обучение по международной методике Трехъязычное обучение</h3>
                     <div class="header__button">
-                        <a href="#footer-form" type="button" class="header__btn">Оствить заявку</a>
+                        <a href="#footer-form" type="button" class="header__btn">Оставить заявку</a>
                     </div>
                 </div>
             </div>
@@ -164,12 +164,12 @@
                                 </sapn>
                             </li>
                         </ul>
-                        <form action="" class="footer-form" id="footer-form">
+                        <form action="send.php" method="POST" class="footer-form" id="footer-form">
                             <div class="form-inner">
                                 <h3>Написать нам</h3>
-                                <input type="text" placeholder="Username">
-                                <input type="email" placeholder="Email">
-                                <textarea placeholder="Сообщение..." rows="3"></textarea>
+                                <input type="text" placeholder="Username" name="name">
+                                <input type="email" placeholder="Email" name="email">
+                                <textarea placeholder="Сообщение..." rows="3" name="message"></textarea>
                                 <input type="submit" value="Отправить">
                             </div>
                         </form>
